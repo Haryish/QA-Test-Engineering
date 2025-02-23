@@ -1,0 +1,72 @@
+{
+    "positiveCases": [
+      {
+        "fullName": "John Doe",
+        "lastName": "Doe",
+        "email": "johndoe@example.com",
+        "currentAddress": "123 Main St, New York, NY",
+        "permanentAddress": "456 Elm St, Los Angeles, CA"
+      },
+      {
+        "fullName": "Jane Smith",
+        "lastName": "Smith",
+        "email": "jane.smith@domain.net",
+        "currentAddress": "Apt 24, 789 Maple Ave, Chicago, IL",
+        "permanentAddress": "Apt 89, 101 Oak Dr, Miami, FL"
+      },
+      {
+        "fullName": "李雷",
+        "lastName": "雷",
+        "email": "lilei@example.cn",
+        "currentAddress": "500 East Beijing Rd, Shanghai, CN",
+        "permanentAddress": "123 West Nanjing Rd, Beijing, CN"
+      }
+    ],
+    "negativeCases": [
+      {
+        "fullName": "John@123",
+        "lastName": "123Doe",
+        "email": "johndoe.com",
+        "currentAddress": "",
+        "permanentAddress": ""
+      },
+      {
+        "fullName": null,
+        "lastName": null,
+        "email": "johndoe@@example..com",
+        "currentAddress": "<script>alert(1)</script>",
+        "permanentAddress": "../../etc/passwd"
+      },
+      {
+        "fullName": "Test Name!@#",
+        "lastName": "Doe*&",
+        "email": "name@@domain",
+        "currentAddress": "Special chars like @!$",
+        "permanentAddress": "%%^&*"
+      }
+    ],
+    "edgeCases": [
+      {
+        "fullName": "A",
+        "lastName": "Z",
+        "email": "a@b.co",
+        "currentAddress": "#1 A St, City, Country",
+        "permanentAddress": "Same as Current Address"
+      },
+      {
+        "fullName": "Name With 255 Characters.......................................................................................................................................................................................................................................................",
+        "lastName": "LongLastNameWith255Chars",
+        "email": "longemailaddress_255@sub.domain.com",
+        "currentAddress": "Super long address with max characters allowed...",
+        "permanentAddress": "Max allowed characters"
+      },
+      {
+        "fullName": "Special Characters 😃🎉🔥",
+        "lastName": "LastName@!$%^&*()",
+        "email": "user!@domain.co",
+        "currentAddress": "123 🏡 Emoji Lane, City 🌎",
+        "permanentAddress": "789 ✈️ Travel Road, Destination 🌍"
+      }
+    ]
+  }
+  
