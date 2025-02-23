@@ -1,4 +1,4 @@
-/// <reference types = "Cypress" />
+/// <reference types = "cypress" />
 
 describe('Want to check if the page loaded correcrly', () => {
   it('passes', () => {
